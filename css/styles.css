@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(253, 253, 253);
+
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+hr{
+    
+    border-top: 1px solid rgb(122, 122, 122);
+    border-bottom: none;
+    width:80vw;
+    margin: 120px auto 60px auto;
+}
+main{
+    display: flex;
+    height: 100vh;
+
+}
+
+.left-main{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    flex: 1;
+    
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px 30px;
+    color: rgb(78, 78, 78);
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.nav-item{
+    margin-right: 40px;
+}
+
+.main-intro{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.main-title{
+    width: 450px;
+    font-size: 50px;
+    margin-right:30px;
+    font-family: 'Brygada 1918', serif;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+}
+.main-desc{
+    width: 350px;
+    margin-right: 70px;
+    padding-top: 20px;
+    color: rgb(179, 179, 179);
+    font-size: 13.5px;
+    line-height: 1.5;
+    font-weight: 500;
+    
+}
+
+.cta-btn{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.cta{
+    width: 240px;
+    height: 60px;
+    transform: translate(50%, -50px);
+    background-color: rgb(235, 213, 141);
+    cursor: pointer;
+    padding-top: 0px;
+    font-family: 'Brygada 1918', serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: rgb(47, 47, 47);
+    border: none;
+    box-shadow: 7px 7px 0 rgba(228, 214, 86, 0.616);
+
+}
+
+.cta a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.cta a:visited{
+    color: rgb(47, 47, 47);
+
+}
+.right-main{
+    flex:1
+}
+
+
+.main-img{
+    background: url("../imgs/login.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/***********************************************/
+.watches-shown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.shown-title{
+    font-family: 'Brygada 1918', serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: rgb(44, 44, 44);
+}
+
+.shown-desc{
+    color: rgb(98, 98, 98);
+    margin-top: 10px;
+}
+
+.watches-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-top: 50px;
+
+}
+
+.watch-wrapper{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.watch-wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px rgb(173, 173, 173);
+    opacity: 0.9;
+    transition: all .8s ease;
+}
+
+.watch-wrapper:hover img{
+    transform: scale(1.4 );
+}
+
+
+
+.features-wrapper{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.items_wrapper{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: transparent;
+    
+}
+
+.features-title{
+    font-size: 55px;
+    font-weight: 700;
+    color: rgb(44, 44, 44);
+    margin-bottom: 50px;
+    margin-left: 130px;
+    margin-right: 50px;
+    flex:1.5;
+    max-width: 400px;
+    text-align: center;
+    
+}
+
+.ft-t{
+    font-family: 'Brygada 1918', serif;
+    margin: 30px 0;
+
+}
+
+.ft-desc{
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-align: justify;
+}
+.feature-item{
+    width:36%;
+    /* color: #504028; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.item-icon{
+    width: 110px;
+    height: 110px;
+    background-color: #d4af77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.item-icon:hover{
+    background-color: #f1d3a5;
+    box-shadow: 1px 1px 10px rgb(187, 183, 183);
+
+}
+.item-icon img{
+    width: 70px ;
+    background-color: transparent;
+}
+.item-title{
+    font-family: 'Brygada 1918', serif;
+    color: rgb(78, 76, 76);
+    font-size: 17px;
+}
+.handmade-fix{
+    width: 80px!important;
+    
+}
+
+
+
+.watch-sale{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sale-item *{
+    background-color: transparent;
+}
+.sale-item{
+    width: 360px;
+    height: 350px;
+    background-color: rgba(241, 218, 144, 0.171);
+
+    
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.sale-item img{
+    width: 220px;
+    height: 100%;
+    object-fit: contain;
+    transform: translate(-20px, -30px);
+    
+}
+
+.sale-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sale-desc *{
+    font-family: 'Brygada 1918', serif;
+}
+.sale-text{
+    
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.sale-price{
+    font-size: 20px;
+    margin-bottom: 25px;
+
+}
+
+.sale-btn{
+    background-color: rgb(241, 213, 119);
+
+    height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transform: translate(20%, 50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sale-btn:hover{
+    background-color: rgb(231, 218, 175);
+    color: rgb(58, 49, 22);
+
+}
+
+
+.map .map-title{
+    text-align: center;
+    font-family: 'Brygada 1918', serif;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: rgb(51, 51, 51);
+
+}
+.map img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer *{
+    background-color: transparent;
+}
+footer{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: rgb(36, 36, 36);
+color: rgb(87, 87, 87);
+height: 40px;
+}
+
+.footer-logo{
+    color: white;
+    font-weight: 500;
+    font-size: 35px;
+}
