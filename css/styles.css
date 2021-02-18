@@ -118,6 +118,10 @@ li a{
     color: rgb(47, 47, 47);
 
 }
+
+.cta:link {
+    text-decoration: none;
+}
 .right-main{
     flex:1
 }
